@@ -1,92 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <title>YouTube Clone</title>
     </head>
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>Embedding Images and Video</title>
-
-<body>
-    <header>
+  
+ <body>
+   <!--NAVIGATION BAR-->
+   <header>
         <nav class="navbar">
-          <a href="#">
-             <img src = "img/header/hamburger.png" alt = "Navigation Button">
-          </a>
-          <a href="#">
-            <img src = "img/header/youtube.png" alt = "Youtube">
-          </a>
-          <form>           
-             <input type="text" name="search" id="" placeholder="Search">
-             <a href="#">
-              <img src="img/header/search.png" alt = Search>
-             </a>
-          </form>
-          <button class="btn-upload">
-               <img src="img/header/upload.png" alt="Upload">
-           </button>
-
-        </nav>
-    </header>
-    
-       <section>
-        <div class="video">
-            <iframe src="https://youtu.be/V74l_zS1x8E" frameborder="0" 
-            allow="accelerometer; autoplay;" allowfullscreen>
+            <a href="#" class="youtube">
+                <img src = "img/header/hamburger.png" alt = "Navigation Button">
+            </a>
+            <a href="#">
+               <img src = "img/header/youtube.png" alt = "Youtube">
+            </a>
+            <form class="form">           
+                <input type="text" name="search" id="" placeholder="Search">
+                    
+                <img src="img/header/search.png" alt = Search>
+            </form>
+            <button class="btn-upload">
+              <img src="img/header/upload.png" alt="Upload">
+            </button>
             
-            </iframe>
-            <h3>Contributing to Open Source Part I: The Easy Way</h3>
+            <button type="Sign In" class="sign">Sign In</button></div>
+        </nav>
+   </header>
+   
+   <section>
+       <!-- MAIN VIDEO SECTION -->
+     <main>
+       <iframe src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Contributing to Open Source Part I: The Easy Way</h3>
 
-            <div class="action-container">
-                <div>
-                    <span>54,074 views</span> <span>•</span> <span>Feb 2014 </span>
+        <div class="action-container">
+            <div>
+                <span>54,074 views</span> <span>•</span> <span>Feb 2014 </span>
+            </div>
+
+            <li class="action-buttons">
+              <a href="#"><i class="fas fa-thumbs-up"></i>71K</a>
+              <a href="#"><i class="fas fa-thumbs-down"></i>1.3K</a>
+              <a href="#"><i class="fas fa-share"></i>SHARE</a>
+              <a href="#"><i class="fas fa-list"></i>SAVE</a>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+
+            </li>
+
+        </div>
+      </div>
+        <div class="video-info">
+            <div class="info-container">
+                <div class="channel-name">
+                    <img src="./img/channel.svg" alt="">
+                    <div>
+                        <h3>The Odin Project</h3>
+                        <p>925 Subscribers</p>
+                    </div>
+
                 </div>
-
-                <div class="action-buttons">
-                    <a href="#"><img src="./img/thumb-up.svg" alt="like"><span>399</span></a>
-                    <a href="#"><img src="./img/thumb-down.svg" alt="dislike"><span>15</span></a>
-                    <a href="#"><img src="./img/share.svg" alt="share"><span>Share</span></a>
-                    <a href="#"><img src="./img/playlist-plus.svg" alt="save"><span>save</span></a>
-                    <button class="btn"><img src="img/dots-horizontal.svg" alt="menu"></button>
-
-
-
-                </div>
+                <button class="btn-subscribe">SUBSCRIBE</button>
 
             </div>
-            <div class="video-info">
-                <div class="info-container">
-                    <div class="channel-name">
-                        <img src="./img/channel.svg" alt="">
-                        <div>
-                            <h3>The Odin Project</h3>
-                            <p>925 Subscribers</p>
-                        </div>
-
-                    </div>
-                    <button class="btn-subscribe">SUBSCRIBE</button>
-
-                </div>
-                <div class="description">
-                    <p>Published on Feb 27, 2014 <br>
+            <div class="description">
+               <p>Published on Feb 27, 2014 <br>
                         How do you contribute to open source? In this video, I'll describe the easiest way to make<br> a simple contribution to an 
                          open source project -- without using the command line, a text editor,<br> "forking a repo", or even touching Git outside of Github.
                          I'll also describe what kinds of <br> contributions open source software projects are typically looking for. As an example,
                          <br>I use submitting a student solution to a web development exercise from The Odin Project,<br> a free online curriculum 
                          for learning web development with Ruby on Rails. <br> You can find more information about that project at http://theodinproject.com.</p>
 
-                </div>
-
             </div>
 
         </div>
 
+  
 
-    </section>
-
-    <aside>
+    </main>
+   </section>
+   <!-- SIDE BAR RECOMMENDED VIDEOS -->
+   <aside>
+     <main>
         <div class="right-phone">
 
             <div class="head">
@@ -102,11 +100,8 @@
               </div>
             </div>
         <div class="next-video">
-            <a href="https://www.youtube.com/watch?v=mENDYhfxH-o">
-                <!-- <div class="img">
-                    <img src="./img/img1." alt="">
-
-                </div> -->
+           <a href="#">
+             <img  class="aside__video" src="img/thumbnails/thumbnail-1.jpg" alt="Next video"></a>
                 <div class="video-info">
                     <div>
                         <h3>Contributing to Open Source Part II: The Real Way</h3>
@@ -133,11 +128,9 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=mp0-QQQgv7s">
-            <div class="img">
-              <img src="./img/img2.webp" alt="">
-            </div>
-            <div class="vid-info">
+          <a href="#">
+            <img  class="aside__video" src="img/thumbnails/thumbnail-2.jpg" alt="Next video"></a>  
+          <div class="vid-info">
               <div><h3>Open Source Learning: David Preston at TEDxUCLA</h3></div>
               <div><p>TEDx Talks</p></div>
               <div><p>Recommended for you</p></div>
@@ -158,14 +151,11 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=ZVO8Wt_PCgE">
-            <div class="img">
-              <img src="./img/img3.webp" alt="">
-            </div>
-            <div class="vid-info">
-              <div><h3>Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h3></div>
-              <div><p>Ideas & Inspiration</p></div>
-              <div><p>Recommended for you</p></div>
+         <a href="#"><img class="aside__video" src="img/thumbnails/thumbnail-3.jpg" alt="Next video"></a>
+          <div class="vid-info">
+            <div><h3>Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h3></div>
+            <div><p>Ideas & Inspiration</p></div>
+             <div><p>Recommended for you</p></div>
             </div>
             <div>
               <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
@@ -183,15 +173,12 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=xkzDaKwinA8">
-            <div class="img">
-              <img src="./img/img4.webp" alt="">
-            </div>
-            <div class="vid-info">
-              <div><h3>14 Must Know Chrome Dev Tools Tricks - #JavaScript30 9/30</h3></div>
-              <div><p>Wes Bos</p></div>
-              <div><p>60K views</p></div>
-            </div>
+          <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-4.jpg" alt="Next video"></a>            <div class="vid-info">
+          <div><h3>14 Must Know Chrome Dev Tools Tricks - #JavaScript30 9/30</h3></div>
+          <div><p>Wes Bos</p></div>
+          <div><p>60K views</p></div>
+          
+          </div>
             <div>
               <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
             </div>
@@ -208,35 +195,7 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=mENDYhfxH-o">
-            <div class="img">
-              <img src="./img/img5.webp" alt="">
-            </div>
-            <div class="vid-info">
-              <div><h3>Contributing to Open Source Part II: The Real Way</h3></div>
-              <div><p>The Odin Project</p></div>
-              <div><p>33K views</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">14:25</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=Bv_5Zv5c-Ts">
-            <div class="img">
-              <img src="./img/img6.webp" alt="">
-            </div>
+         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-5.jpg" alt="Next video"></a>
             <div class="vid-info">
               <div><h3>JavaScript: Understanding the Weird Parts - The First 3.5 Hours</h3></div>
               <div><p>Tony Alicea</p></div>
@@ -258,11 +217,8 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E">
-            <div class="img">
-              <img src="./img/img7.webp" alt="">
-            </div>
-            <div class="vid-info">
+         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-6.jpg" alt="Next video"></a>
+            <div class="vid-info"></div>
               <div><h3>What is GitHub?</h3></div>
               <div><p>GitHub</p></div>
               <div><p>697K views</p></div>
@@ -283,10 +239,7 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=73I5dRucCds">
-            <div class="img">
-              <img src="./img/img8.webp" alt="">
-            </div>
+          <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-7.jpg" alt="Next video"></a>
             <div class="vid-info">
               <div><h3>How to Get Started with Github - Beginner Tutorial</h3></div>
               <div><p>MicrowaveSam</p></div>
@@ -308,10 +261,7 @@
           </div>
         </div>
         <div class="next-video">
-          <a href="https://www.youtube.com/watch?v=p-89r5QvQvQ">
-            <div class="img">
-              <img src="./img/img9.webp" alt="">
-            </div>
+         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-8.jpg" alt="Next video"></a>
             <div class="vid-info">
               <div><h3>What Python Projects Should I Build to Get a Job?</h3></div>
               <div><p>Real Python</p></div>
@@ -335,126 +285,7 @@
       </div>
 
 
-    </aside>
-
-    <article>
-        <div class="comments">
-            <div class="comment">
-              <h3>14 comments</h3>
-              <button class="btn"><img src="./img/sort-variant.svg" alt="sort">SORT BY</button>
-            </div>
-            <div class="my-comment">
-              <img src="./img/account-badge.svg" alt="acct">
-              <div class="comment-box">
-                <div class="input">
-                  <input type="text" placeholder="Add a public comment...">
-                </div>
-                <div class="btn-comment">
-                  <button class="btn1">CANCEL</button>
-                  <button class="btn2">COMMENT</button>
-                </div>
-              </div>
-            </div>
-  
-            <div class="content">
-              <div class="viewer-comment">
-                <div class="img"><img src="./img/badge1.svg"></div>
-                <div>
-                  <div class="name"><span>Wing N.</span> <a href=" #">2 years ago (edited)</a></div>
-                  <div>
-                    <p>"use your powers for good" haha <br />
-                      thank you for the video.</p>
-                  </div>
-                  <div class="response">
-                    <button class="btn"><img src="./img/sm-thumb-up.svg" alt="like"></button>
-                    <span>10</span>
-                    <button class="btn"><img src="./img/sm-thumb-down.svg" alt="dislike">
-                    </button>
-                    <button class="btn">REPLY</button>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="viewer-comment">
-                <div class="img"><img src="./img/badge5.svg"></div>
-                <div>
-                  <div class="name"><span>andrewscheuermann05</span> <a href=" #">5 years ago</a></div>
-                  <div>
-                    <p>FYI: the edit button has changed to a diagonal pencil</p>
-                  </div>
-                  <div class="response">
-                    <button class="btn"><img src="./img/sm-thumb-up.svg" alt="like"></button>
-                    <span>2</span>
-                    <button class="btn"><img src="./img/sm-thumb-down.svg" alt="dislike">
-                    </button>
-                    <button class="btn">REPLY</button>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="viewer-comment">
-                <div class="img"><img src="./img/badge4.svg"></div>
-                <div>
-                  <div class="name"><span>Philip Gouldman</span> <a href="#">2 years ago</a></div>
-                  <div>
-                    <p>This video didnt help. I see it was uploaded 3 years ago but I wonder if that would really matter.
-                      I'm trying to submit
-                      my solution to the Ruby: Ceasar Cypher project but can't really figure out how to do it....it's on
-                      my Github repository
-                      entitled Odin-Project. help :(</p>
-                  </div>
-                  <div class="response">
-                    <button class="btn"><img src="./img/sm-thumb-up.svg" alt="like"></button>
-                    <span></span>
-                    <button class="btn"><img src="./img/sm-thumb-down.svg" alt="dislike">
-                    </button>
-                    <button class="btn">REPLY</button>
-                  </div>
-                  <div class="hide-reply">
-                    <button class="btn">
-                     <img src="./img/caret-up.svg" alt=""> Hide reply
-                    </button>
-                  </div>
-      
-                </div>
-              </div>
-  
-              <div class="viewer-comment reply">
-                <div class="img"><img src="./img/badge6.svg"></div>
-                <div>
-                  <div class="name"><span>Hilbert França</span> <a href="#">5 months ago</a></div>
-                  <div>
-                    <p>how it didnt help? You just have to edit the .md file in their github repo</p>
-                  </div>
-                  <div class="response">
-                    <button class="btn"><img src="./img/sm-thumb-up.svg" alt="like"></button>
-                    <span></span>
-                    <button class="btn"><img src="./img/sm-thumb-down.svg" alt="dislike">
-                    </button>
-                    <button class="btn">REPLY</button>
-                  </div>
-                </div>
-              </div>
-              <div class="viewer-comment">
-                <div class="img"><img src="./img/badge3.svg"></div>
-                <div>
-                  <div class="name"><span>Sean Park</span> <a href="#">3 years ago</a></div>
-                  <div>
-                    <p>thanks a lot for video</p>
-                  </div>
-                  <div class="response">
-                    <button class="btn"><img src="./img/sm-thumb-up.svg" alt="like"></button>
-                    <span></span>
-                    <button class="btn"><img src="./img/sm-thumb-down.svg" alt="dislike">
-                    </button>
-                    <button class="btn">REPLY</button>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-        </div>
-    </article>
+    </main>
+  </aside>
 </body>
 </html>
