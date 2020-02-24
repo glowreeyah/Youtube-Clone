@@ -18,13 +18,38 @@ header {
 	padding: 10px;
 }
 
+.navbar-right {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	
+}
+
+.right-icons {
+	height: 40px;
+    width: 40px;
+    padding: 8px;
+	cursor: pointer;
+	
+}
+
+.yt-icon {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.yt-icon-profile {
+    fill: #3ea6ff;
+}
 .autoplay {
-	margin-right: 23px;
-    margin-top: 4px;
-    display: inline-flex;
-   
+	margin-left: 170px;
+    /* margin-top: 4px; */
+    /*display: inline-flex;*/
 
 }
+
+
 .yt-icon-menu {    
 	fill: white;   
 	width: 24px;   
@@ -141,6 +166,19 @@ aside {
 	width: 25%;
 }
 
+.sidebar-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 15px 10px 10px 0;	
+
+}
+
+.sidebar-top i {
+	margin-left: 10px;
+}
+
+
 .recommended-video {
 	display: flex;
 	margin-bottom: 3%;
@@ -172,7 +210,7 @@ img {
 h2 {
     padding: 0px 0px 17px 5px;    font-size: 18px;    font-weight: normal;
 }
-.embedded-video > iframe {
+.embedded-video iframe {
     width: 100%;     height: 510px;    border: none;    padding: 20px 20px 20px 5px;
 }
 .main-video-channel {    display: flex;    align-items: center;    width: 100%;    padding: 0px 8px 8px;    justify-content: space-between;    font-size: 14px;
