@@ -1,291 +1,233 @@
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=0.6">
-        <title>YouTube Clone</title>
-    </head>
-  
- <body>
-   <!--NAVIGATION BAR-->
-   <header>
-        <nav class="navbar">
-            <a href="#" class="youtube">
-                <img src = "img/header/hamburger.png" alt = "Navigation Button">
-            </a>
-            <a href="#">
-               <img src = "img/header/youtube.png" alt = "Youtube">
-            </a>
-            <form class="form">           
-                <input type="text" name="search" id="" placeholder="Search">
-                    
-                <img src="img/header/search.png" alt = Search>
-            </form>
-            <button class="btn-upload">
-              <img src="img/header/upload.png" alt="Upload">
-            </button>
-            
-            <button type="Sign In" class="sign">Sign In</button></div>
-        </nav>
-   </header>
-   
-   <section>
-       <!-- MAIN VIDEO SECTION -->
-     <main>
-       <iframe src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h3>Contributing to Open Source Part I: The Easy Way</h3>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>YouTube Player</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="navbar_logo">
+			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class= "yt-icon-menu">
+				<g>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+				</g>
+			</svg>
+		
+		<i class="fa fa-youtube-play fa-2x logo" aria-hidden="true"></i><span id="logo-text">YouTube</span>
+		<input type="text" placeholder="Search..."> 
+		<i class="fa fa-keyboard-o keyboard" aria-hidden="true"></i> 
+		<i class="fa fa-search search" aria-hidden="true"></i>
+	</div>
+	</header>
 
-        <div class="action-container">
-            <div>
-                <span>54,074 views</span> <span>•</span> <span>Feb 2014 </span>
-            </div>
+	<main>
+		<aside>
+			<div class="head">
+				<div class="upnext"><span>Up next</span></div>
+				<div class="autoplay"><span>AUTOPLAY</span>
+				  <div>
+					<label for="toggle1" class="toggle-1">
+					  <input type="checkbox" id="toggle1" class="toggle-1__input" />
+					  <span class="toggle-1__button"></span>
+					</label>
+				  </div>
+				</div>
+			</div>
+			<div class="recommended-video">
+				<img src=".img/thumbnails//thumbnail-1.jpg">
+				<div class="infos-recommended-video">
+					<h5>Contributing to Open Source Part II: The Real Way</h5>
+                    <p>29k Views</p>
+					<p class="channel">The Odin Project</p>
+				</div>
 
-            <li class="action-buttons">
-              <a href="#"><i class="fas fa-thumbs-up"></i>71K</a>
-              <a href="#"><i class="fas fa-thumbs-down"></i>1.3K</a>
-              <a href="#"><i class="fas fa-share"></i>SHARE</a>
-              <a href="#"><i class="fas fa-list"></i>SAVE</a>
-              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+			</div>
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-2.jpg">
+				<div class="infos-recommended-video">
+					<h5>Open Source Learning: David Preston at TEDxUCLA</h5>
+					<p>Recommended for you</p>
+					<p class="channel">TEDx Talks</p>
+				</div>
+	
+			</div>
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-3.jpg">
+				<div class="infos-recommended-video">
+					<h5>Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h5>
+					<p>Recommended for you</p>
+					<p class="channel">Ideas & Inspiration</p>
+				</div>
+			</div>
 
-            </li>
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-4.jpg">
+				<div class="infos-recommended-video">
+					<h5>14 Must Know Chrome Dev Tools Tricks - #JavaScript30 9/30</h5>
+					<p>60K views</p>
+					<p class="channel">Wes Bos</p>
+				</div>
+			</div>
 
-        </div>
-      </div>
-        <div class="video-info">
-            <div class="info-container">
-                <div class="channel-name">
-                    <img src="./img/channel.svg" alt="">
-                    <div>
-                        <h3>The Odin Project</h3>
-                        <p>925 Subscribers</p>
-                    </div>
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-5.jpg">
+				<div class="infos-recommended-video">
+					<h5>JavaScript: Understanding the Weird Parts - The First 3.5 Hours</h5>
+					<p>3M views</p>	
+					<p class="channel">Tony Alicea</p>
+				</div>
+			</div>
+			
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-6.jpg">
+				<div class="infos-recommended-video">
+					<br>
+					<h5>What is GitHub</h5>
+					<p>697K views</p>	
+					<p class="channel">GitHub</p>
+				</div>
+			</div>
+			
+			<div class="recommended-video">
+				<img src="img/thumbnails/thumbnail-8.jpg">
+				<div class="infos-recommended-video">
+					<br>
+					<h5>How to Get Started with Github - Beginner Tutorial</h5>
+					<p>594K views</p>	
+					<p class="channel">MicroWaveSam</p>
+				</div>
+			</div>
 
-                </div>
-                <button class="btn-subscribe">SUBSCRIBE</button>
+		</aside>
 
-            </div>
-            <div class="description">
-               <p>Published on Feb 27, 2014 <br>
-                        How do you contribute to open source? In this video, I'll describe the easiest way to make<br> a simple contribution to an 
-                         open source project -- without using the command line, a text editor,<br> "forking a repo", or even touching Git outside of Github.
-                         I'll also describe what kinds of <br> contributions open source software projects are typically looking for. As an example,
-                         <br>I use submitting a student solution to a web development exercise from The Odin Project,<br> a free online curriculum 
-                         for learning web development with Ruby on Rails. <br> You can find more information about that project at http://theodinproject.com.</p>
-
-            </div>
-
-        </div>
-
-  
-
-    </main>
-   </section>
-   <!-- SIDE BAR RECOMMENDED VIDEOS -->
-   <aside>
-     <main>
-        <div class="right-phone">
-
-            <div class="head">
-              <div class="upnext"><span>Up next</span></div>
-              <div class="autoplay">
-                <div><span>AUTOPLAY</span></div>
-                <div>
-                  <label for="toggle1" class="toggle-1">
-                    <input type="checkbox" id="toggle1" class="toggle-1__input" />
-                    <span class="toggle-1__button"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-        <div class="next-video">
-           <a href="#">
-             <img  class="aside__video" src="img/thumbnails/thumbnail-1.jpg" alt="Next video"></a>
-                <div class="video-info">
-                    <div>
-                        <h3>Contributing to Open Source Part II: The Real Way</h3>
-                        <p>The Odin Project</p>
-                        <p>29k Views</p>
-                    </div>
-
-                </div>
-                <button class="btn"> <img src="./img/dots-vertical.svg" alt=""></button>
-            </a>
-
-
-
-        </div>
-        <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">11:09</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-          <a href="#">
-            <img  class="aside__video" src="img/thumbnails/thumbnail-2.jpg" alt="Next video"></a>  
-          <div class="vid-info">
-              <div><h3>Open Source Learning: David Preston at TEDxUCLA</h3></div>
-              <div><p>TEDx Talks</p></div>
-              <div><p>Recommended for you</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">10:37</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-         <a href="#"><img class="aside__video" src="img/thumbnails/thumbnail-3.jpg" alt="Next video"></a>
-          <div class="vid-info">
-            <div><h3>Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h3></div>
-            <div><p>Ideas & Inspiration</p></div>
-             <div><p>Recommended for you</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">19:10</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-          <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-4.jpg" alt="Next video"></a>            <div class="vid-info">
-          <div><h3>14 Must Know Chrome Dev Tools Tricks - #JavaScript30 9/30</h3></div>
-          <div><p>Wes Bos</p></div>
-          <div><p>60K views</p></div>
-          
-          </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">10:36</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-5.jpg" alt="Next video"></a>
-            <div class="vid-info">
-              <div><h3>JavaScript: Understanding the Weird Parts - The First 3.5 Hours</h3></div>
-              <div><p>Tony Alicea</p></div>
-              <div><p>3M views</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">3:32:49</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-6.jpg" alt="Next video"></a>
-            <div class="vid-info"></div>
-              <div><h3>What is GitHub?</h3></div>
-              <div><p>GitHub</p></div>
-              <div><p>697K views</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">3:45</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-          <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-7.jpg" alt="Next video"></a>
-            <div class="vid-info">
-              <div><h3>How to Get Started with Github - Beginner Tutorial</h3></div>
-              <div><p>MicrowaveSam</p></div>
-              <div><p>594K views</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">34:37</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next-video">
-         <a href="#"><img  class="aside__video" src="img/thumbnails/thumbnail-8.jpg" alt="Next video"></a>
-            <div class="vid-info">
-              <div><h3>What Python Projects Should I Build to Get a Job?</h3></div>
-              <div><p>Real Python</p></div>
-              <div><p>183K views</p></div>
-            </div>
-            <div>
-              <button class="btn"><img src="./img/dots-vertical.svg" alt=""></button>
-            </div>
-          </a>
-          <div class="overlay-hover">
-            <div class="overlay">
-              <button class="btn1 play"><img src="./img/play.svg" alt=""></button>
-              <div class="overlay-btns">
-                <button class="btn1"><img src="./img/clock.svg" alt=""></button>
-                <button class="btn1"><img src="./img/sort-variant.svg" alt=""></button>
-                <button class="btn1">12:18</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </main>
-  </aside>
+		<section id="video">
+			<main class="video"> 
+				<div >
+					<div class="embedded video">
+					   <iframe src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<br>
+					<h2>Contributing to Open Source Part I: The Easy Way</h2>            
+					<div class="main-video-channel">
+					   <p class="grey">54,074 views • Feb 17, 2014</p> 
+					<div class="main-video-details">
+					   <div class="main-video-reactions">
+						<div class="video-reaction">
+						   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+							   <g>
+								   <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+							 </g>
+						   </svg>
+						</div>
+						<p class="grey">401</p>
+					   </div>                <div class="main-video-reactions">
+						   <div class="video-reaction">
+							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+								   <g>
+									   <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+								 </g>
+							   </svg>
+						   </div>
+						   <p class="grey">16</p>
+					   </div>                <div class="main-video-reactions">
+						   <div class="video-reaction">
+							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+								   <g>
+									   <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
+								   </g>
+							   </svg>
+						   </div>
+						   <p class="grey">SHARE</p>
+					   </div>                <div class="main-video-reactions">
+						   <div class="video-reaction">
+							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+								   <g>
+									   <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+								   </g>
+							   </svg>
+						   </div>
+						   <p class="grey">SAVE</p>
+					   </div>                <div class="main-video-reactions">
+						   <div class="video-reaction">
+							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+								   <g>
+									   <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+								   </g>
+							   </svg>
+						   </div>
+					   </div>  
+					             
+				   </div>
+				   
+			   </div>
+			   <hr>
+			   <div id="about">
+				<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+				<div id="description">
+					<p><strong>Published on Feb 27, 2014</strong> <br><br>
+		 				 How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an 
+		 				 open source project...
+					<p id="show-more"><strong>Show more</strong></p>
+				</div>				
+				<button id="subscribe">Subscribe</button>
+			</div>
+			<hr>
+			   </main>
+	
+			<article style="margin-top: 5%;">
+				<div class="comment">
+					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+					<div class="answer">
+						<p>User 42 <span class="date">1 month ago</span></p>
+						<p>Let’s put the meme aside, this is actually a banging song.</p>
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i> 100K
+						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="comment">
+					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+					<div class="answer">
+						<p>User 2 <span class="date">1 month ago</span></p>
+						<p>he looks like he’s 13 but sounds like he’s 30</p>
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i> 100K
+						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="comment">
+					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+					<div class="answer">
+						<p>User 51 <span class="date">1 month ago</span></p>
+						<p>Dislikes are the kids who didn’t get free Fortnite vbucks generator</p>
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i> 100K
+						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>					
+				</div>
+				<div class="comment">
+					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+					<div class="answer">
+						<p>User 69 <span class="date">1 month ago</span></p>
+						<p>We got Rickrolled so many times that we don't even care anymore</p>
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i> 100K
+						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="comment">
+					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+					<div class="answer">
+						<p>User 71 <span class="date">1 month ago</span></p>
+						<p>Wait, this is not the link to avengers endgame full movie</p>
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i> 100K
+						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
 </body>
 </html>
