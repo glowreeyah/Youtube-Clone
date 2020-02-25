@@ -17,8 +17,10 @@ html {
 .navbar_logo {
 	display: inline;
 	margin-right: 200px;
+	
 
 }
+
 
 header {
 	background-color: #282828;
@@ -60,7 +62,8 @@ header {
     fill: #3ea6ff;
 }
 .autoplay {
-	margin-left: 170px;
+	margin-left: 130px;
+	margin-bottom: 30px;
     /* margin-top: 4px; */
     /*display: inline-flex;*/
 
@@ -100,6 +103,7 @@ input {
 	margin-left: 5px;
 	position: relative;
 	bottom: 2px;
+	aria-hidden: true;
 }
 
 .keyboard {
@@ -139,6 +143,7 @@ main {
 
 #description {
   width: 70%;
+  margin-right: 10%;
   
 }
 
@@ -162,6 +167,7 @@ main {
 .comment {
 	display: flex;
 	margin-bottom: 3%;
+	margin-left: 3%;
 }
 
 .answer {
@@ -181,15 +187,17 @@ main {
 aside {
 	float: right;
 	width: 25%;
+	cursor: pointer;
 }
 
 .sidebar-top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    margin: 15px 10px 10px 0;	
+	display: inline;
+	/* justify-content: space-between; */
+	/* align-items: center; */
+    margin: 20px 10px 10px 10px;	
 
 }
+
 
 .sidebar-top i {
 	margin-left: 10px;
