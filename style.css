@@ -137,7 +137,7 @@ main {
 }
 
 #subscribe {
-  background-color: #cc0000;
+  background-color: #c00;
   color: white;
   border: none;
   border-radius: 3px;
@@ -208,7 +208,7 @@ img {
 }
 
 h2 {
-  padding: 0px 0px 17px 5px;
+  padding: 17px 5px;
   font-size: 18px;
   font-weight: normal;
 }
@@ -224,7 +224,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0px 8px 8px;
+  padding: 8px 8px;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -256,4 +256,11 @@ h2 {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+.channel-avatar {
+  margin-right: 15px;
+}
+
+.channel-avatar img {
+  border-radius: 100px;
 }
