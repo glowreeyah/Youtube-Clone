@@ -11,6 +11,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 </head>
 <body>
+
+<!-- NAVIGATION BAR -->
 	<header>
 		<div class="navbar_logo">
 			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class= "yt-icon-menu">
@@ -19,11 +21,15 @@
 				</g>
 			</svg>
 		
-		<i class="fa fa-youtube-play fa-2x logo" aria-hidden="true"></i><span id="logo-text">YouTube</span>
-		<input type="text" placeholder="Search..."> 
-		<i class="fa fa-keyboard-o keyboard" aria-hidden="true"></i> 
-		<i class="fa fa-search search" aria-hidden="true"></i>
+			<i class="fa fa-youtube-play fa-2x logo" aria-hidden="true"></i><span id="logo-text">YouTube</span>
 		</div>
+
+		<div class="search-bar">
+			<input type="text" placeholder="Search..."> 
+			<i class="fa fa-keyboard-o keyboard" aria-hidden="true"></i> 
+			<span><i class="fa fa-search search" aria-hidden="true"></i></span>
+		</div>
+
 		<div class="navbar-right">
 			<div class="right-icons">
 			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
@@ -32,6 +38,7 @@
 				  </g>
 			</svg>
 		</div>
+
 		<div class="right-icons">
 			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
 				<g>
@@ -39,22 +46,24 @@
 				  </g>
 			</svg>
 		</div>
+
 		<div class="right-icons">
 			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
 				<g>
 				<path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
 			  </g></svg>
 		</div>
+
 		<div class="right-icons">
 			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
 				<g>
 					<path d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z" class="yt-icon-profile"></path>
-  
 				</g>
 			</svg>
 		</div>
-	</div>
 	</header>
+
+<!-- SIDE BAR VIDEOS  -->
 
 	<main>
 		<aside>
@@ -71,8 +80,8 @@
                     <p>29k Views</p>
 					<p class="channel">The Odin Project</p>
 				</div>
-
 			</div>
+
 			<div class="recommended-video">
 				<img src="img/thumbnails/thumbnail-2.jpg">
 				<div class="infos-recommended-video">
@@ -82,6 +91,7 @@
 				</div>
 	
 			</div>
+
 			<div class="recommended-video">
 				<img src="img/thumbnails/thumbnail-3.jpg">
 				<div class="infos-recommended-video">
@@ -131,6 +141,8 @@
 
 		</aside>
 
+<!-- MAIN VIDEO -->
+
 		<section id="video">
 			<main class="video"> 
 				<div >
@@ -143,16 +155,17 @@
 					   <p class="grey">54,074 views • Feb 17, 2014</p> 
 					<div class="main-video-details">
 					   <div class="main-video-reactions">
-						<div class="video-reaction">
-						   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
-							   <g>
-								   <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
-							 </g>
+						   <div class="video-reaction">
+							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+								   <g>
+									   <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+									</g>
 						   </svg>
 						</div>
 						<p class="grey">401</p>
-					   </div>               
-					 	<div class="main-video-reactions">
+					   </div>
+
+					   <div class="main-video-reactions">
 						   <div class="video-reaction">
 							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
 								   <g>
@@ -161,7 +174,9 @@
 							   </svg>
 						   </div>
 						   <p class="grey">16</p>
-					   </div>                <div class="main-video-reactions">
+					   	</div>
+
+					   <div class="main-video-reactions">
 						   <div class="video-reaction">
 							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
 								   <g>
@@ -170,7 +185,9 @@
 							   </svg>
 						   </div>
 						   <p class="grey">SHARE</p>
-					   </div>                <div class="main-video-reactions">
+					   </div>
+
+					   <div class="main-video-reactions">
 						   <div class="video-reaction">
 							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
 								   <g>
@@ -179,33 +196,34 @@
 							   </svg>
 						   </div>
 						   <p class="grey">SAVE</p>
-					   </div>                <div class="main-video-reactions">
-						   <div class="video-reaction">
+						</div>
+
+						<div class="main-video-reactions">
+						   	<div class="video-reaction">
 							   <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
 								   <g>
 									   <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
 								   </g>
 							   </svg>
-						   </div>
-					   </div>  
-					             
-				   </div>
-				   
-			   </div>
+						   	</div>
+					   	</div>              
+				   	</div>
+				</div>
 			   <hr>
+
 			   <div id="about">
-				<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
-				<div id="description">
-					<p><strong>Published on Feb 27, 2014</strong> <br><br>
+				   <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+				   <div id="description">
+					   <p><strong>Published on Feb 27, 2014</strong> <br><br>
 		 				 How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an 
-		 				 open source project...
-					<p id="show-more"><strong>Show more</strong></p>
-				</div>				
-				<button id="subscribe">Subscribe</button>
-			</div>
-			<hr>
-			   </main>
-	
+						  open source project...
+						  <p id="show-more"><strong>Show more</strong></p>
+					</div>
+					<button id="subscribe">Subscribe</button>
+				</div>
+				<hr>
+			</main>
+
 			<article style="margin-top: 5%;">
 				<div class="comment">
 					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
@@ -216,6 +234,7 @@
 						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
 					</div>
 				</div>
+
 				<div class="comment">
 					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
 					<div class="answer">
@@ -225,6 +244,7 @@
 						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
 					</div>
 				</div>
+
 				<div class="comment">
 					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
 					<div class="answer">
@@ -234,6 +254,7 @@
 						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
 					</div>					
 				</div>
+
 				<div class="comment">
 					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
 					<div class="answer">
@@ -243,6 +264,7 @@
 						<i class="fa fa-thumbs-down" aria-hidden="true"></i>
 					</div>
 				</div>
+				
 				<div class="comment">
 					<i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
 					<div class="answer">
