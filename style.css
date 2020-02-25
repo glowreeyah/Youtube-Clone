@@ -14,7 +14,11 @@ html {
 }
 
 /* NAVIGATION BAR */
+.navbar_logo {
+	display: inline;
+	margin-right: 200px;
 
+}
 
 header {
 	background-color: #282828;
@@ -23,16 +27,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding: 10px;
 }
 .search-bar {
-	display: inline-block;
+	display: flex;
 	width: 700px;
 }
 
-input {
+/* input {
 	width: 600px;
 	padding: 200px;
-}
+} */
 .navbar-right {
 	display: flex;
 }
@@ -78,7 +83,7 @@ input {
 	color: #82765f;
 	position: relative;
 	bottom: 2px;
-	margin-left: 13%;
+	margin-left: 4%;
 }
 
 .logo { 
