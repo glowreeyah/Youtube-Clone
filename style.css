@@ -29,9 +29,8 @@ header {
 
 .search-bar {
   display: flex;
-  width: 500px;
+  width: 800px;
 }
-
 
 .navbar-right {
   display: flex;
@@ -66,7 +65,7 @@ header {
 }
 
 input {
-  width: 40%;
+  width: 60%;
   height: 25px;
   padding: 3px;
   border: 1px solid black;
@@ -259,9 +258,9 @@ h2 {
   cursor: pointer;
 }
 .channel-avatar {
-	margin-right: 15px;
+  margin-right: 15px;
 }
 
 .channel-avatar img {
-	border-radius: 100px;
+  border-radius: 100px;
 }
