@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>YouTube Player</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+		<link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	</head>
+	<body>
+
+<!-- NAVIGATION BAR -->
+		<header>	
+			<div class="navbar_logo">
+				<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class= "yt-icon-menu">
+					<g>
+						<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+					</g>
+				</svg>
+			
+				<i class="fa fa-youtube-play fa-2x logo"></i><span id="logo-text">YouTube</span>
+			</div>
+
+			<div class="search-bar">
+				<input type="text" placeholder="Search..."> 
+				<i class="fa fa-keyboard-o keyboard"></i> 
+				<span><i class="fa fa-search search"></i></span>
+			</div>
+
+			<div class="navbar-right">
+				<div class="right-icons">
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
+						<g>
+						<path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path>
+						</g>
+					</svg>
+				</div>
+
+				<div class="right-icons">
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
+						<g>
+						<path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path>
+						</g>
+					</svg>
+				</div>
+
+				<div class="right-icons">
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon">
+						<g>
+						<path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+					</g></svg>
+				</div>
+
+				<div class="right-icons">
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+						<g>
+							<path d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z" class="yt-icon-profile"></path>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</header>
+
+<!-- SIDE BAR VIDEOS  -->
+
+		<main>
+			<aside>
+				<div class="sidebar-top">
+					<span class="upnext">Up next</span>
+					<span class ="autoplay">AUTOPLAY</span>
+					<i class="fa fa-toggle-on"></i>
+				</div>
+
+				<br>
+
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-1.jpg" alt="Odin's Open Source"></a>
+					<div class="infos-recommended-video">
+						<h5>Contributing to Open Source Part II: The Real Way</h5>
+						<p>29k Views</p>
+						<p class="channel">The Odin Project</p>
+					</div>
+				</div>
+
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-2.jpg" alt="David Preston's Ted Talk"></a>
+					<div class="infos-recommended-video">
+						<h5>Open Source Learning: David Preston at TEDxUCLA</h5>
+						<p>Recommended for you</p>
+						<p class="channel">TEDx Talks</p>
+					</div>
+		
+				</div>
+
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-3.jpg" alt="Nishat Kasibhatla's Learn Fast"></a>
+					<div class="infos-recommended-video">
+						<h5>Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h5>
+						<p>Recommended for you</p>
+						<p class="channel">Ideas & Inspiration</p>
+					</div>
+				</div>
+
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-4.jpg" alt="Knowing Chrome Dev Tools"></a>
+					<div class="infos-recommended-video">
+						<h5>14 Must Know Chrome Dev Tools Tricks - #JavaScript30 9/30</h5>
+						<p>60K views</p>
+						<p class="channel">Wes Bos</p>
+					</div>
+				</div>
+
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-5.jpg" alt="JavaScript Basics"></a>
+					<div class="infos-recommended-video">
+						<h5>JavaScript: Understanding the Weird Parts - The First 3.5 Hours</h5>
+						<p>3M views</p>	
+						<p class="channel">Tony Alicea</p>
+					</div>
+				</div>
+				
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-6.jpg" alt="About Github"></a>
+					<div class="infos-recommended-video">
+						<br>
+						<h5>What is GitHub</h5>
+						<p>697K views</p>	
+						<p class="channel">GitHub</p>
+					</div>
+				</div>
+				
+				<div class="recommended-video">
+					<a href="#"><img src="img/thumbnails/thumbnail-8.jpg" alt="GitHub beginner tutorial"></a>
+					<div class="infos-recommended-video">
+						<br>
+						<h5>How to Get Started with Github - Beginner Tutorial</h5>
+						<p>594K views</p>	
+						<p class="channel">MicroWaveSam</p>
+					</div>
+				</div>
+			</aside>
+
+<!-- MAIN VIDEO -->
+
+			<section>
+				<div class="video">
+					<div> 
+						<div class="embedded-video">
+							<iframe src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<br>
+						<h2>Contributing to Open Source Part I: The Easy Way</h2>            
+						<div class="main-video-channel">
+							<p class="grey">54,074 views • Feb 17, 2014</p> 
+							<div class="main-video-details">
+								<div class="main-video-reactions">
+									<div class="video-reaction">
+										<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+											<g>
+											<path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+											</g>
+										</svg>
+									</div>
+									<p class="grey">401</p>
+								</div>
+
+								<div class="main-video-reactions">
+									<div class="video-reaction">
+										<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+											<g>
+											<path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+											</g>
+										</svg>
+									</div>
+									<p class="grey">16</p>
+								</div>
+
+								<div class="main-video-reactions">
+									<div class="video-reaction">
+										<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+											<g>
+											<path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
+											</g>
+										</svg>
+									</div>
+									<p class="grey">SHARE</p>
+								</div>
+
+								<div class="main-video-reactions">
+									<div class="video-reaction">
+										<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+											<g>
+											<path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+											</g>
+										</svg>
+									</div>
+									<p class="grey">SAVE</p>
+								</div>
+
+								<div class="main-video-reactions">
+									<div class="video-reaction">
+										<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon-reaction">
+											<g>
+											<circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+											</g>
+										</svg>
+									</div>
+								</div>              
+							</div>
+							<hr>
+						</div>
+						<hr>
+						<div id="about">
+							<div class="channel-avatar">
+								<a href="https://www.youtube.com/channel/UCk0b0VTnJxXbxupXJ4D2yjQ"><img id="img" alt="" src="https://yt3.ggpht.com/a/AGF-l79PHE32UB5d2fnmwsiJXu3vv_fnC_SNO899VQ=s48-c-k-c0xffffffff-no-rj-mo"></a>
+							</div>
+							<div id="description">
+								<p><strong>Published on Feb 27, 2014</strong> <br><br>
+								How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an 
+								open source project...
+								<p id="show-more"><strong>Show more</strong></p>
+							</div>
+							<button id="subscribe">Subscribe</button>
+						</div>
+						<hr>
+					</div>
+				</div>
+<!-- COMMENTS SECTION -->
+				<article>
+					<h4>5 Comments</h4>
+					<div class="comment">
+						<i class="fa fa-user-circle fa-2x"></i>
+						<div class="answer">
+							<p>Wing N. <span class="date">2 years ago(edited)</span></p>
+							<p>"use your powers for good" haha thank you for the video.</p>
+							<i class="fa fa-thumbs-up" ></i> 10
+							<i class="fa fa-thumbs-down"></i>
+						</div>
+					</div>
+					<div class="comment">
+						<i class="fa fa-user-circle fa-2x" ></i>
+						<div class="answer">
+							<p>andrewscheuermann05 <span class="date">5 years ago</span></p>
+							<p>FYI: the edit button has changed to a diagonal pencil</p>
+							<i class="fa fa-thumbs-up"></i> 2
+							<i class="fa fa-thumbs-down"></i>
+						</div>
+					</div>
+
+					<div class="comment">
+						<i class="fa fa-user-circle fa-2x"></i>
+						<div class="answer">
+							<p>Fer Del Valle <span class="date">5 month ago</span></p>
+							<p>Awesome, thanks</p>
+							<i class="fa fa-thumbs-up"></i> 100K
+							<i class="fa fa-thumbs-down"></i>
+						</div>					
+					</div>
+
+					<div class="comment">
+						<i class="fa fa-user-circle fa-2x"></i>
+						<div class="answer">
+							<p>Luyi Ren <span class="date">2 years ago</span></p>
+							<p>Your video helped me try to make my first contribution! Thank you so much!</p>
+							<i class="fa fa-thumbs-up"></i> 100K
+							<i class="fa fa-thumbs-down"></i>
+						</div>
+					</div>
+
+					<div class="comment">
+						<i class="fa fa-user-circle fa-2x"></i>
+						<div class="answer">
+							<p>ButtonMasher <span class="date">3 years ago</span></p>
+							<p>Wow this video was super helpful, clear, and concise. Thank you very much.</p>
+							<i class="fa fa-thumbs-up"></i> 100K
+							<i class="fa fa-thumbs-down"></i>
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
