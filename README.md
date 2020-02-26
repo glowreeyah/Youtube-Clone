@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/glowreeyah/Microverse-hermela-glory/video_player_page/index.html)
+[Live Demo Link](https://raw.githack.com/glowreeyah/Youtube-Clone/master/index.html)
 
 ## Getting Started
 
