@@ -145,12 +145,17 @@ main {
   font-size: calc(14px + 0.1vw);
   text-transform: uppercase;
   font-weight: bold;
+  margin-right: 2%;
 }
+h4 {
+  margin-top: 2%;
+}
+
 
 .comment {
   display: flex;
   margin-bottom: 3%;
-  margin-left: 3%;
+  margin-top: 2%;
 }
 
 .answer {
@@ -233,6 +238,7 @@ h2 {
   display: flex;
   width: auto;
   align-items: center;
+  margin-left: 42%;
 }
 
 .main-video-reactions {
